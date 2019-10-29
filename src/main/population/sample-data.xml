@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+- sample-data.xml
+-
+- Copyright (c) 2019 Rafael Corchuelo.
+-
+- In keeping with the traditional purpose of furthering education and research, it is
+- the policy of the copyright owner to permit non-commercial use and redistribution of
+- this software. It has been tested carefully, but it is not guaranteed for any particular
+- purposes.  The copyright owner does not offer any warranties or representations, nor do
+- they accept any liabilities with respect to them.
+-->
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<import resource="conversion-service.xml" />
+
+	<!-- BonaciniBulletins -->
+	
+	<bean id="bonaciniBulletin01" class="acme.entities.bulletins.BonaciniBulletin" >
+		<property name="moment" value="2002/04/20 16:00"/>
+		<property name="author" value="Emiya Shirou"/>
+		<property name="text" value="People die if they're killed..."/>
+		<property name="city" value="Fuyuki"/>
+	</bean>
+	
+	<bean id="bonaciniBulletin02" class="acme.entities.bulletins.BonaciniBulletin" >
+		<property name="moment" value="2014/04/02 14:00"/>
+		<property name="author" value="Luca Bonacini"/>
+		<property name="text" value="I am eternally 17 (◕‿◕✿)"/>
+		<property name="city" value="Planet Usamin"/>
+	</bean>
+	
+	<bean id="bonaciniBulletin03" class="acme.entities.bulletins.BonaciniBulletin" >
+		<property name="moment" value="2007/10/23 22:37"/>
+		<property name="author" value="Suzumiya Haruhi"/>
+		<property name="text" value="All ships, open fire! Go out there and burn the enemy leader with all the fires of hell!"/>
+		<property name="city" value="Tokyo"/>
+	</bean>
+	
+	<bean id="bonaciniBulletin04" class="acme.entities.bulletins.BonaciniBulletin" >
+		<property name="moment" value="2011/05/13 12:45"/>
+		<property name="author" value="Sasasegawa Sasami"/>
+		<property name="text" value="My name is Sasasesa... Sasasegawa Sasami!"/>
+		<property name="city" value="Keyverse"/>
+	</bean>
+  
+    <!-- BarbaBulletins -->
+    
+    <bean id="BarbaBulletin01" class="acme.entities.bulletins.BarbaBulletin">
+        <property name="author" value="Alejandro Barba"/>
+        <property name="text" value="Bulletin de prueba 1"/>
+        <property name="topic" value="Física"/>
+        <property name="moment" value="2019/07/07 00:00"/>
+    </bean>
+    
+    <bean id="BarbaBulletin02" class="acme.entities.bulletins.BarbaBulletin">
+        <property name="author" value="Alejandro Barba"/>
+        <property name="text" value="Bulletin de prueba 2"/>
+        <property name="topic" value="Informática"/>
+        <property name="moment" value="2019/08/08 00:00"/>
+    </bean>
+    
+    <bean id="BarbaBulletin03" class="acme.entities.bulletins.BarbaBulletin">
+        <property name="author" value="Alejandro Barba"/>
+        <property name="text" value="Bulletin de prueba 3"/>
+        <property name="topic" value="Informática"/>
+        <property name="moment" value="2019/09/09 00:00"/>
+    </bean>
+  
+    <!-- PatonBulletins -->
+  
+  	<bean id="PatonBulletin1" class="acme.entities.bulletins.PatonBulletin">
+		    <property name="author" value="Miguel Patón Gutiérrez" />
+		    <property name="text" value="Esta es la primera prueba" />
+		    <property name="moment" value="2019/10/20 23:42" />
+		    <property name="company" value="Compañia de prueba" />
+	  </bean>
+	
+	  <bean id="PatonBulletin2" class="acme.entities.bulletins.PatonBulletin">
+		    <property name="author" value="Miguel Angel Patón Carmona" />
+		    <property name="text" value="Esta es la segunda prueba" />
+		    <property name="moment" value="2019/10/19 20:15" />
+		    <property name="company" value="Empresa de prueba" />
+	  </bean>
+  
+    <!-- ToledoBulletins -->
+    <bean id="ToledoBulletin01"	class="acme.entities.bulletins.ToledoBulletin">
+		    <property name="author" value="Alberto Toledo" />
+		    <property name="text" value="Estoy feliz, prueba 1" />
+		    <property name="moment" value="2019/08/08 19:31" />
+		    <property name="email" value="email@prueba1" />
+	  </bean>
+	
+	  <bean id="ToledoBulletin02"	class="acme.entities.bulletins.ToledoBulletin">
+		    <property name="author" value="Alberto Toledo" />
+		    <property name="text" value="Estoy muy feliz, prueba 2" />
+		    <property name="moment" value="2019/08/08 19:36" />
+		    <property name="email" value="email@prueba2.com" />
+	  </bean>
+
+</beans>
