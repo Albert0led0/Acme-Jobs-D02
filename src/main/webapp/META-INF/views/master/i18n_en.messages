@@ -67,6 +67,11 @@ master.menu.user-account.become-provider = Become a provider
 master.menu.user-account.consumer = Consumer data
 master.menu.user-account.become-consumer = Become a consumer
 
+# master.menu.company-record ##################################################
+
+master.menu.company-record = Company Records
+master.menu.company-record.list = Records list
+
 # master.footer ###############################################################
 
 master.footer.title.about = About us
