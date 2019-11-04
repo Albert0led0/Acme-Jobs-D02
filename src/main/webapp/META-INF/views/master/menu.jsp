@@ -46,6 +46,10 @@
 		<acme:menu-option code="master.menu.consumer" access="hasRole('Consumer')">
 			<acme:menu-suboption code="master.menu.consumer.favourite-link" action="http://www.example.com/"/>
 		</acme:menu-option>
+		
+		<acme:menu-option code="master.menu.company-record" access="isAnonymous()">
+			<acme:menu-suboption code="master.menu.company-record.list" action="/anonymous/company-record/list"/>
+		</acme:menu-option>
 	</acme:menu-left>
 
 	<acme:menu-right>
