@@ -50,6 +50,10 @@
 		<acme:menu-option code="master.menu.company-record" access="isAnonymous()">
 			<acme:menu-suboption code="master.menu.company-record.list" action="/anonymous/company-record/list"/>
 		</acme:menu-option>
+		
+		<acme:menu-option code="master.menu.investor-record" access="isAnonymous()">
+			<acme:menu-suboption code="master.menu.investor-record.list" action="/anonymous/investor-record/list"/>
+		</acme:menu-option>
 	</acme:menu-left>
 
 	<acme:menu-right>
@@ -67,7 +71,10 @@
 		<acme:menu-option code="master.menu.company-record" access="isAuthenticated()">
 			<acme:menu-suboption code="master.menu.company-record.list" action="/authenticated/company-record/list"/>
 		</acme:menu-option>
-
+		
+		<acme:menu-option code="master.menu.investor-record" access="isAuthenticated()">
+			<acme:menu-suboption code="master.menu.investor-record.list" action="/authenticated/investor-record/list"/>
+		</acme:menu-option>
 		<acme:menu-option code="master.menu.sign-out" action="/master/sign-out" access="isAuthenticated()"/>
 	</acme:menu-right>
 </acme:menu-bar>

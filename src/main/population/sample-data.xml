@@ -162,6 +162,29 @@
 		<property name="incorporated" value="false" />
 		<property name="stars"><null/></property>
 	</bean>
+	
+		<!-- InvestorRecords -->
+	
+	<bean id="InvestorRecord01" class="acme.entities.investorRecords.InvestorRecord">
+		<property name="investorName" value="Azahara González" />
+		<property name="sector" value="Informática" />
+		<property name="investingStatement" value="100.56" />
+		<property name="stars"><null/></property>
+	</bean>
+	
+	<bean id="InvestorRecord02" class="acme.entities.investorRecords.InvestorRecord">
+		<property name="investorName" value="Ángeles Jiménez" />
+		<property name="sector" value="Construcción" />
+		<property name="investingStatement" value="200.95" />
+		<property name="stars" value="0.5"/>
+	</bean>
+	
+	<bean id="InvestorRecord03" class="acme.entities.investorRecords.InvestorRecord">
+		<property name="investorName" value="María Rodríguez" />
+		<property name="sector" value="Informática" />
+		<property name="investingStatement" value="95.49" />
+		<property name="stars" value="4.7" />
+	</bean>
 	  
 
 </beans>
