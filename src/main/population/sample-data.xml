@@ -101,4 +101,11 @@
 		    <property name="email" value="email@prueba2.com" />
 	  </bean>
 
+	<!-- Configurations -->
+	
+	<bean id="Configuration" class = "acme.entities.configurations.Configuration">
+			<property name ="spamwords" value = "sex, hard core, viagra, cialis, nigeria, you've won, million dollar, sexo, duro, has ganado, millón de dolares"/>
+			<property name="spamThreshold" value = "1"/>
+	</bean>
+
 </beans>
