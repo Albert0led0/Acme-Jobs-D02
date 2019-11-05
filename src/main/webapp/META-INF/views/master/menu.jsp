@@ -61,7 +61,7 @@
 		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.offer" access="isAuthenticated()">
-			<acme:menu-suboption code="master.menu.offer.list" action="/authenticated/offer/list"/>
+			<acme:menu-suboption code="master.menu.offer.list" action="/authenticated/offer/list-active"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.sign-out" action="/master/sign-out" access="isAuthenticated()"/>

@@ -92,7 +92,7 @@ master.company.phone = +000 123 456
 master.company.email = contact@acme.com
 
 # master.menu.offer ##############################################################
-master.menu.offer = Offers
+master.menu.offer = Active offers
 master.menu.offer.list = Offers List
 
 # master.license ##############################################################

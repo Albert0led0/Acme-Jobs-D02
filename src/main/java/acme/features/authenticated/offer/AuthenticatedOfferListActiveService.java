@@ -14,7 +14,7 @@ import acme.framework.entities.Authenticated;
 import acme.framework.services.AbstractListService;
 
 @Service
-public class AuthenticatedOfferListService implements AbstractListService<Authenticated, Offer> {
+public class AuthenticatedOfferListActiveService implements AbstractListService<Authenticated, Offer> {
 
 	@Autowired
 	AuthenticatedOfferRepository repository;
