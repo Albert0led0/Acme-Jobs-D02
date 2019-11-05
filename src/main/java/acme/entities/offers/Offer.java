@@ -10,6 +10,7 @@ import javax.persistence.TemporalType;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Past;
+import javax.validation.constraints.Pattern;
 
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
@@ -42,6 +43,7 @@ public class Offer extends DomainEntity {
 	private double				maxReward;
 
 	@Column(unique = true)
+	@Pattern(regexp = "^O[A-Z]{4}-[0-9]{5}$")
 	private String				ticker;
 
 }
