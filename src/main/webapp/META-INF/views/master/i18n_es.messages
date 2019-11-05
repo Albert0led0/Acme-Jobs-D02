@@ -67,6 +67,21 @@ master.menu.user-account.become-provider = Hazte proveedor
 master.menu.user-account.consumer = Datos de consumidor
 master.menu.user-account.become-consumer = Hazte consumidor
 
+# master.menu.company-record ##################################################
+
+master.menu.company-record = Registros de empresas
+master.menu.company-record.list = Listado de registros
+
+# master.menu.investor-record #################################################
+
+master.menu.investor-record = Registros de inversores
+master.menu.investor-record.list = Listado de registros
+
+# master.menu.challenge #######################################################
+
+master.menu.challenge = Retos
+master.menu.challenge.list = Listado de retos
+
 ﻿# master.footer ###############################################################
 
 master.footer.title.about = Nosotros
@@ -94,6 +109,17 @@ master.company.email = contact@acme.com
 # master.menu.offer ##############################################################
 master.menu.offer = Ofertas activas
 master.menu.offer.list = Lista de ofertas
+
+# master.menu.request ##############################################################
+
+master.menu.request = Pedidos activos
+master.menu.request.list = Lista de pedidos
+
+# master.menu.announcement ####################################################
+master.menu.announcement.authenticated = Anuncios mensuales
+master.menu.announcement.anonymous = Anuncios mensuales
+master.menu.announcement.administrator = Todos los anuncios
+master.menu.announcement.list = Lista de anuncios
 
 # master.license ##############################################################
 
