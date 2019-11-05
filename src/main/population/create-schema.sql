@@ -78,6 +78,18 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `request` (
+       `id` integer not null,
+        `version` integer not null,
+        `deadline` datetime(6),
+        `description` varchar(255),
+        `moment` datetime(6),
+        `reward` double precision not null,
+        `ticker` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `toledo_bulletin` (
        `id` integer not null,
         `version` integer not null,
@@ -105,6 +117,9 @@
     ) engine=InnoDB;
 
     insert into `hibernate_sequence` values ( 1 );
+
+    alter table `request` 
+       add constraint UK_9mxq3powq8tqctclj0fbi2nih unique (`ticker`);
 
     alter table `user_account` 
        add constraint UK_castjbvpeeus0r8lbpehiu0e4 unique (`username`);
