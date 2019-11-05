@@ -101,6 +101,37 @@
 		    <property name="email" value="email@prueba2.com" />
 	  </bean>
 	  
+	  <!-- Offers -->
+	  <bean id="Offer01"	class="acme.entities.offers.Offer">
+		    <property name="title" value="Example Offer 01" />
+		    <property name="moment" value="2019/08/08 13:00" />
+		    <property name="deadline" value="2029/12/01 00:00" />
+		    <property name="description" value="This is the first example of an offer" />
+		    <property name="minReward" value="1900.0" />
+		    <property name="maxReward" value="2500.0" />
+		    <property name="ticker" value="OHDUB-62839" />
+	  </bean>
+	  
+	  <bean id="Offer02"	class="acme.entities.offers.Offer">
+		    <property name="title" value="Example Offer 02" />
+		    <property name="moment" value="2019/10/02 11:56" />
+		    <property name="deadline" value="2029/12/04 00:00" />
+		    <property name="description" value="This is the second example of an offer" />
+		    <property name="minReward" value="2500.0" />
+		    <property name="maxReward" value="4000.0" />
+		    <property name="ticker" value="ONCJO-78402" />
+	  </bean>
+	  
+	  <bean id="Offer03"	class="acme.entities.offers.Offer">
+		    <property name="title" value="Example Offer 03" />
+		    <property name="moment" value="2019/10/02 11:56" />
+		    <property name="deadline" value="2019/11/04 00:00" />
+		    <property name="description" value="This is the third example of an offer" />
+		    <property name="minReward" value="2500.0" />
+		    <property name="maxReward" value="4000.0" />
+		    <property name="ticker" value="OECJO-78402" />
+	  </bean>
+
 	  <!-- Requests -->
 	  <bean id="Request01"	class="acme.entities.requests.Request">
 		    <property name="title" value="Request 01" />
