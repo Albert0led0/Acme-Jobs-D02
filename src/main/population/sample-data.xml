@@ -100,6 +100,28 @@
 		    <property name="moment" value="2019/08/08 19:36" />
 		    <property name="email" value="email@prueba2.com" />
 	  </bean>
+	  
+	  <!-- Announcement -->
+	  <bean id="announcement01" class="acme.entities.announcements.Announcement">
+	  		<property name="title" value="Sample announcement 01"/>
+	  		<property name="moment" value="2019/11/03 00:00"/>
+	  		<property name="moreInfo" value="http://www.example.com"/>
+	  		<property name="description" value="This is the first example of an announcement"/>
+	  </bean>
+	  
+	  <bean id="announcement02" class="acme.entities.announcements.Announcement">
+	  		<property name="title" value="Sample announcement 02"/>
+	  		<property name="moment" value="2019/10/24 12:45"/>
+	  		<property name="moreInfo" value="http://www.example.com"/>
+	  		<property name="description" value="This is the second example of an announcement"/>
+	  </bean>
+	  
+	  <bean id="announcement03" class="acme.entities.announcements.Announcement">
+	  		<property name="title" value="Sample old announcement 03"/>
+	  		<property name="moment" value="2019/04/05 03:25"/>
+	  		<property name="moreInfo" value="http://www.example.com"/>
+	  		<property name="description" value="This an old announcement"/>
+	  </bean>
 	
 	<!-- CompanyRecords --> 
 	
@@ -214,6 +236,5 @@
 		<property name="silverReward" value="40.56" />
 		<property name="bronzeReward" value="15.59" />
 	</bean>
-	  
 
 </beans>
