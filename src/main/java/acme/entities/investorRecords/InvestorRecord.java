@@ -2,11 +2,12 @@
 package acme.entities.investorRecords;
 
 import javax.persistence.Entity;
-import javax.validation.constraints.Min;
+import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 
 import org.hibernate.validator.constraints.Range;
 
+import acme.framework.datatypes.Money;
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
 import lombok.Setter;
@@ -24,8 +25,8 @@ public class InvestorRecord extends DomainEntity {
 	@NotBlank
 	private String				sector;
 
-	@Min(0)
-	private double				investingStatement;
+	@Valid
+	private Money				investingStatement;
 
 	@Range(min = 0, max = 5)
 	private Double				stars;

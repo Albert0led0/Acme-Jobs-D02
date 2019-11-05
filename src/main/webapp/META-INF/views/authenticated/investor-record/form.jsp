@@ -8,7 +8,7 @@
 <acme:form readonly="true">
 	<acme:form-textbox code="authenticated.investor-record.form.label.investor" path="investorName"/>
 	<acme:form-textbox code="authenticated.investor-record.form.label.sector" path="sector"/>
-	<acme:form-double code="authenticated.investor-record.form.label.statement" path="investingStatement" />
+	<acme:form-money code="authenticated.investor-record.form.label.statement" path="investingStatement" />
 	<jstl:choose>
 		<jstl:when test="${stars == null}">
 			<acme:form-double code="authenticated.investor-record.form.label.stars" path="stars" placeholder="${nostars}"/>

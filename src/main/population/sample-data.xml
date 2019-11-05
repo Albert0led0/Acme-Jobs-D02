@@ -107,8 +107,12 @@
 		    <property name="moment" value="2019/08/08 13:00" />
 		    <property name="deadline" value="2029/12/01 00:00" />
 		    <property name="description" value="This is the first example of an offer" />
-		    <property name="minReward" value="1900.0" />
-		    <property name="maxReward" value="2500.0" />
+		    <property name="minReward">
+				<ref bean="Money02" />
+			</property>
+		    <property name="maxReward">
+				<ref bean="Money01" />
+			</property>
 		    <property name="ticker" value="OHDUB-62839" />
 	  </bean>
 	  
@@ -117,8 +121,12 @@
 		    <property name="moment" value="2019/10/02 11:56" />
 		    <property name="deadline" value="2029/12/04 00:00" />
 		    <property name="description" value="This is the second example of an offer" />
-		    <property name="minReward" value="2500.0" />
-		    <property name="maxReward" value="4000.0" />
+		    <property name="minReward">
+				<ref bean="Money02" />
+			</property>
+		    <property name="maxReward">
+				<ref bean="Money01" />
+			</property>
 		    <property name="ticker" value="ONCJO-78402" />
 	  </bean>
 	  
@@ -127,8 +135,12 @@
 		    <property name="moment" value="2019/10/02 11:56" />
 		    <property name="deadline" value="2019/11/04 00:00" />
 		    <property name="description" value="This is the third example of an offer" />
-		    <property name="minReward" value="2500.0" />
-		    <property name="maxReward" value="4000.0" />
+		    <property name="minReward">
+				<ref bean="Money02" />
+			</property>
+		    <property name="maxReward">
+				<ref bean="Money01" />
+			</property>
 		    <property name="ticker" value="OECJO-78402" />
 	  </bean>
 
@@ -138,7 +150,9 @@
 		    <property name="moment" value="2019/08/08 23:45" />
 		    <property name="deadline" value="2029/12/12 19:31" />
 		    <property name="description" value="Example of a request" />
-		    <property name="reward" value="2000.0" />
+		    <property name="reward">
+				<ref bean="Money01" />
+			</property>
 		    <property name="ticker" value="RHSLO-37298" />
 	  </bean>
 	  
@@ -147,7 +161,9 @@
 		    <property name="moment" value="2019/10/10 00:00" />
 		    <property name="deadline" value="2029/12/01 12:34" />
 		    <property name="description" value="Another example of a request" />
-		    <property name="reward" value="1534.0" />
+		    <property name="reward">
+				<ref bean="Money01" />
+			</property>
 		    <property name="ticker" value="ROSLO-92036" />
 	  </bean>
 	  
@@ -156,7 +172,9 @@
 		    <property name="moment" value="2019/10/10 00:00" />
 		    <property name="deadline" value="2019/11/01 12:34" />
 		    <property name="description" value="Another example of an old request" />
-		    <property name="reward" value="1500.0" />
+		    <property name="reward">
+				<ref bean="Money01" />
+			</property>
 		    <property name="ticker" value="ROSPO-92036" />
 	  </bean>
   
@@ -249,21 +267,27 @@
 	<bean id="InvestorRecord01" class="acme.entities.investorRecords.InvestorRecord">
 		<property name="investorName" value="Azahara González" />
 		<property name="sector" value="Informática" />
-		<property name="investingStatement" value="100.56" />
+		<property name="investingStatement">
+			<ref bean="Money01" />
+		</property>
 		<property name="stars"><null/></property>
 	</bean>
 	
 	<bean id="InvestorRecord02" class="acme.entities.investorRecords.InvestorRecord">
 		<property name="investorName" value="Ángeles Jiménez" />
 		<property name="sector" value="Construcción" />
-		<property name="investingStatement" value="200.95" />
+		<property name="investingStatement">
+			<ref bean="Money01" />
+		</property>
 		<property name="stars" value="0.5"/>
 	</bean>
 	
 	<bean id="InvestorRecord03" class="acme.entities.investorRecords.InvestorRecord">
 		<property name="investorName" value="María Rodríguez" />
 		<property name="sector" value="Informática" />
-		<property name="investingStatement" value="95.49" />
+		<property name="investingStatement">
+			<ref bean="Money01" />
+		</property>
 		<property name="stars" value="4.7" />
 	</bean>
 	
@@ -273,27 +297,61 @@
 		<property name="title" value="Titulo01" />
 		<property name="deadline" value="2025/04/02 14:00"/>
 		<property name="description" value="Esto es una descripción de ejemplo." />
-		<property name="goldReward" value="50.5" />
-		<property name="silverReward" value="30.5" />
-		<property name="bronzeReward" value="10.5" />
+		<property name="goldReward">
+			<ref bean="Money01" />
+		</property>
+		<property name="silverReward">
+			<ref bean="Money02" />
+		</property>
+		<property name="bronzeReward">
+			<ref bean="Money03" />
+		</property>
 	</bean>
 	
 	<bean id="Challenge02" class="acme.entities.challenges.Challenge">
 		<property name="title" value="Titulo02" />
 		<property name="deadline" value="2026/04/02 14:00"/>
 		<property name="description" value="Esto es una segunda descripción de ejemplo." />
-		<property name="goldReward" value="60.57" />
-		<property name="silverReward" value="40.56" />
-		<property name="bronzeReward" value="15.59" />
+		<property name="goldReward">
+			<ref bean="Money01" />
+		</property>
+		<property name="silverReward">
+			<ref bean="Money02" />
+		</property>
+		<property name="bronzeReward">
+			<ref bean="Money03" />
+		</property>
 	</bean>
 	
 	<bean id="Challenge03" class="acme.entities.challenges.Challenge">
 		<property name="title" value="Titulo03" />
 		<property name="deadline" value="2015/04/02 14:00"/>
 		<property name="description" value="Esto es una tercera descripción de ejemplo." />
-		<property name="goldReward" value="60.57" />
-		<property name="silverReward" value="40.56" />
-		<property name="bronzeReward" value="15.59" />
+		<property name="goldReward">
+			<ref bean="Money01" />
+		</property>
+		<property name="silverReward">
+			<ref bean="Money02" />
+		</property>
+		<property name="bronzeReward">
+			<ref bean="Money03" />
+		</property>
 	</bean>
-
+	
+	<!-- Money -->
+	
+	<bean id="Money01" class="acme.framework.datatypes.Money">
+		<property name="amount" value="60.5" />
+		<property name="currency" value="€" />
+	</bean>
+	
+	<bean id="Money02" class="acme.framework.datatypes.Money">
+		<property name="amount" value="30.5" />
+		<property name="currency" value="€" />
+	</bean>
+	
+	<bean id="Money03" class="acme.framework.datatypes.Money">
+		<property name="amount" value="10.5" />
+		<property name="currency" value="€" />
+	</bean>
 </beans>

@@ -6,9 +6,10 @@ import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
-import javax.validation.constraints.Min;
+import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 
+import acme.framework.datatypes.Money;
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
 import lombok.Setter;
@@ -29,13 +30,13 @@ public class Challenge extends DomainEntity {
 	@NotBlank
 	private String				description;
 
-	@Min(0)
-	private double				goldReward;
+	@Valid
+	private Money				goldReward;
 
-	@Min(0)
-	private double				silverReward;
+	@Valid
+	private Money				silverReward;
 
-	@Min(0)
-	private double				bronzeReward;
+	@Valid
+	private Money				bronzeReward;
 
 }

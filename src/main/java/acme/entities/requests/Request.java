@@ -7,11 +7,12 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
-import javax.validation.constraints.Min;
+import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Past;
 import javax.validation.constraints.Pattern;
 
+import acme.framework.datatypes.Money;
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
 import lombok.Setter;
@@ -36,8 +37,8 @@ public class Request extends DomainEntity {
 	@NotBlank
 	private String				description;
 
-	@Min(0)
-	private double				reward;
+	@Valid
+	private Money				reward;
 
 	@Column(unique = true)
 	@Pattern(regexp = "^R[A-Z]{4}-[0-9]{5}$")
