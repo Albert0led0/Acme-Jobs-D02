@@ -578,7 +578,8 @@ bg=blue</panel_attributes>
 Configuration
 --
 + spamWords: String
-+ spamThreshold: double{Range(0, 1)}</panel_attributes>
++ spamThreshold: double{Range(0, 1)}
++ language: String{NotBlank}</panel_attributes>
     <additional_attributes/>
   </element>
   <element>

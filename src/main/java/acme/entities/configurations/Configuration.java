@@ -1,10 +1,8 @@
 
 package acme.entities.configurations;
 
-import java.util.Collection;
-
-import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
+import javax.validation.constraints.NotBlank;
 
 import org.hibernate.validator.constraints.Range;
 
@@ -23,10 +21,12 @@ public class Configuration extends DomainEntity {
 
 	//Attributes----------------------------------------------------------
 
-	@ElementCollection
-	private Collection<String>	spamwords;
+	private String				spamwords;
 
 	@Range(min = 0, max = 1)
-	private Double				spamThreshold;
+	private double				spamThreshold;
+
+	@NotBlank
+	private String				language;
 
 }
