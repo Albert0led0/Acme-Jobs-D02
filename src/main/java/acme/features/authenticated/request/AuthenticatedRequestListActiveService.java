@@ -13,7 +13,7 @@ import acme.framework.entities.Authenticated;
 import acme.framework.services.AbstractListService;
 
 @Service
-public class AuthenticatedRequestListService implements AbstractListService<Authenticated, Request> {
+public class AuthenticatedRequestListActiveService implements AbstractListService<Authenticated, Request> {
 
 	@Autowired
 	AuthenticatedRequestRepository repository;

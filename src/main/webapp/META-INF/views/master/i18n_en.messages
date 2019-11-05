@@ -93,7 +93,7 @@ master.company.email = contact@acme.com
 
 # master.menu.request ##############################################################
 
-master.menu.request = Requests
+master.menu.request = Active requests
 master.menu.request.list = Requests List
 
 # master.license ##############################################################
