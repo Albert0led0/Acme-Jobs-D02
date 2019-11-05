@@ -91,6 +91,10 @@ master.company.address = Calle, número, Ciudad, Estado, País
 master.company.phone = +000 123 456
 master.company.email = contact@acme.com
 
+# master.menu.offer ##############################################################
+master.menu.offer = Ofertas
+master.menu.offer.list = Lista de ofertas
+
 # master.license ##############################################################
 
 master.license.title = Licencia
