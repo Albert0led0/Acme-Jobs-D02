@@ -17,10 +17,6 @@
 	"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
 	
 <tiles-definitions>
-
-	<definition name="administrator/configuration/list" extends="master">
-		<put-attribute name="body" type="template" value="../administrator/configuration/list.jsp" />
-	</definition>
 	
 	<definition name="administrator/configuration/form" extends="master">
 		<put-attribute name="body" type="template" value="../administrator/configuration/form.jsp" />

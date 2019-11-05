@@ -11,10 +11,6 @@
        drop 
        foreign key FK_h52w0f3wjoi68b63wv9vwon57;
 
-    alter table `configuration_spamwords` 
-       drop 
-       foreign key `FKf0x2ov36hm1xpeypjqtqlrlf4`;
-
     alter table `consumer` 
        drop 
        foreign key FK_6cyha9f1wpj0dpbxrrjddrqed;
@@ -34,8 +30,6 @@
     drop table if exists `bonacini_bulletin`;
 
     drop table if exists `configuration`;
-
-    drop table if exists `configuration_spamwords`;
 
     drop table if exists `consumer`;
 

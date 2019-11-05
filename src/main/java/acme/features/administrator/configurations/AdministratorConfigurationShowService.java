@@ -40,9 +40,9 @@ public class AdministratorConfigurationShowService implements AbstractShowServic
 		assert request != null;
 
 		Configuration res;
-		int id;
-		id = request.getModel().getInteger("id");
-		res = this.repository.findConfigurationById(id);
+		String language;
+		language = request.getModel().getString("language");
+		res = this.repository.findByLanguage(language);
 		return res;
 
 	}
