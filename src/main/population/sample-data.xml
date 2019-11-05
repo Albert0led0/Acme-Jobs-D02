@@ -121,5 +121,15 @@
 		    <property name="maxReward" value="4000.0" />
 		    <property name="ticker" value="ONCJO-78402" />
 	  </bean>
+	  
+	  <bean id="Offer03"	class="acme.entities.offers.Offer">
+		    <property name="title" value="Example Offer 03" />
+		    <property name="moment" value="2019/10/02 11:56" />
+		    <property name="deadline" value="2019/11/04 00:00" />
+		    <property name="description" value="This is the third example of an offer" />
+		    <property name="minReward" value="2500.0" />
+		    <property name="maxReward" value="4000.0" />
+		    <property name="ticker" value="OECJO-78402" />
+	  </bean>
 
 </beans>
