@@ -1,7 +1,9 @@
 
-package acme.features.anonymous.announcement;
+package acme.features.authenticated.announcement;
 
+import java.util.Calendar;
 import java.util.Collection;
+import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -9,14 +11,14 @@ import org.springframework.stereotype.Service;
 import acme.entities.announcements.Announcement;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
-import acme.framework.entities.Anonymous;
+import acme.framework.entities.Authenticated;
 import acme.framework.services.AbstractListService;
 
 @Service
-public class AnonymousAnnouncementListService implements AbstractListService<Anonymous, Announcement> {
+public class AuthenticatedAnnouncementListMonthlyService implements AbstractListService<Authenticated, Announcement> {
 
 	@Autowired
-	AnonymousAnnouncementRepository repository;
+	AuthenticatedAnnouncementRepository repository;
 
 
 	@Override
@@ -42,7 +44,13 @@ public class AnonymousAnnouncementListService implements AbstractListService<Ano
 
 		Collection<Announcement> result;
 
-		result = this.repository.findManyAll();
+		Date date = new Date(System.currentTimeMillis() - 1);
+		Calendar cal = Calendar.getInstance();
+		cal.setTime(date);
+		cal.add(Calendar.MONTH, -1);
+		Date d = cal.getTime();
+
+		result = this.repository.findAllMonthly(d);
 
 		return result;
 	}

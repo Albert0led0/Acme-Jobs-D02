@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import acme.components.CustomCommand;
 import acme.entities.announcements.Announcement;
 import acme.framework.components.BasicCommand;
 import acme.framework.controllers.AbstractController;
@@ -17,16 +18,17 @@ import acme.framework.entities.Anonymous;
 public class AnonymousAnnouncementController extends AbstractController<Anonymous, Announcement> {
 
 	@Autowired
-	private AnonymousAnnouncementListService	listService;
+	private AnonymousAnnouncementListMonthlyService	listMonthlyService;
 
 	@Autowired
-	private AnonymousAnnouncementShowService	showService;
+	private AnonymousAnnouncementShowService		showService;
 
 
 	@PostConstruct
 	private void initialise() {
-		super.addBasicCommand(BasicCommand.LIST, this.listService);
 		super.addBasicCommand(BasicCommand.SHOW, this.showService);
+
+		super.addCustomCommand(CustomCommand.LIST_MONTHLY, BasicCommand.LIST, this.listMonthlyService);
 	}
 
 }

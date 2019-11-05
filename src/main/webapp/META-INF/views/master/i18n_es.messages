@@ -92,7 +92,9 @@ master.company.phone = +000 123 456
 master.company.email = contact@acme.com
 
 # master.menu.announcement ####################################################
-master.menu.announcement = Anuncios
+master.menu.announcement.authenticated = Anuncios mensuales
+master.menu.announcement.anonymous = Anuncios mensuales
+master.menu.announcement.administrator = Todos los anuncios
 master.menu.announcement.list = Lista de anuncios
 
 # master.license ##############################################################
