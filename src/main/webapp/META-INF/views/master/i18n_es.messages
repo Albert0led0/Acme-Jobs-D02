@@ -77,6 +77,11 @@ master.menu.company-record.list = Listado de registros
 master.menu.investor-record = Registros de inversores
 master.menu.investor-record.list = Listado de registros
 
+# master.menu.challenge #######################################################
+
+master.menu.challenge = Retos
+master.menu.challenge.list = Listado de retos
+
 ﻿# master.footer ###############################################################
 
 master.footer.title.about = Nosotros

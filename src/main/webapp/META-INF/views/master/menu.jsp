@@ -75,6 +75,10 @@
 		<acme:menu-option code="master.menu.investor-record" access="isAuthenticated()">
 			<acme:menu-suboption code="master.menu.investor-record.list" action="/authenticated/investor-record/list"/>
 		</acme:menu-option>
+		
+		<acme:menu-option code="master.menu.challenge" access="isAuthenticated()">
+			<acme:menu-suboption code="master.menu.challenge.list" action="/authenticated/challenge/list-active"/>
+		</acme:menu-option>
 		<acme:menu-option code="master.menu.sign-out" action="/master/sign-out" access="isAuthenticated()"/>
 	</acme:menu-right>
 </acme:menu-bar>

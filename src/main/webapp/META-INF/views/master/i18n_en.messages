@@ -77,6 +77,11 @@ master.menu.company-record.list = Records list
 master.menu.investor-record = Investor Records
 master.menu.investor-record.list = Records list
 
+# master.menu.challenge #######################################################
+
+master.menu.challenge = Challenges
+master.menu.challenge.list = Challenge list
+
 # master.footer ###############################################################
 
 master.footer.title.about = About us
