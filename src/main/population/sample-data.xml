@@ -105,7 +105,7 @@
 	  <bean id="Request01"	class="acme.entities.requests.Request">
 		    <property name="title" value="Request 01" />
 		    <property name="moment" value="2019/08/08 23:45" />
-		    <property name="deadline" value="2019/12/12 19:31" />
+		    <property name="deadline" value="2029/12/12 19:31" />
 		    <property name="description" value="Example of a request" />
 		    <property name="reward" value="2000.0" />
 		    <property name="ticker" value="RHSLO-37298" />
@@ -114,7 +114,7 @@
 	  <bean id="Request02"	class="acme.entities.requests.Request">
 		    <property name="title" value="Request 02" />
 		    <property name="moment" value="2019/10/10 00:00" />
-		    <property name="deadline" value="2019/12/01 12:34" />
+		    <property name="deadline" value="2029/12/01 12:34" />
 		    <property name="description" value="Another example of a request" />
 		    <property name="reward" value="1534.0" />
 		    <property name="ticker" value="ROSLO-92036" />
