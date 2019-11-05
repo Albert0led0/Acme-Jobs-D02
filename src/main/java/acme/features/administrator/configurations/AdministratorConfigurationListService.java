@@ -32,8 +32,9 @@ public class AdministratorConfigurationListService implements AbstractListServic
 		assert request != null;
 
 		Collection<Configuration> result;
-
-		result = this.repository.findMany();
+		String language = request.getLocale().getLanguage();
+		result = this.repository.findByLanguage(language);
+		//		result = this.repository.findMany();
 
 		return result;
 	}

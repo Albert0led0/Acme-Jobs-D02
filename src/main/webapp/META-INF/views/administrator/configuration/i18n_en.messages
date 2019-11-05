@@ -11,11 +11,12 @@
 # LIST.JSP
 administrator.configuration.list.label.spamwords = Spam words
 administrator.configuration.list.label.spamthreshold = Spam threshold
-
+administrator.configuration.list.button.return = Return
 
 #FORM.JSP
 administrator.configuration.form.button.return = Return
 administrator.configuration.form.label.spamwords = Spam words:
 administrator.configuration.form.label.spamthreshold = Spam threshold:
+administrator.configuration.form.label.language = Language: 
 
 

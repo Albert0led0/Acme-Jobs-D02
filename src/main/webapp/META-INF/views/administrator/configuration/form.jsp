@@ -18,6 +18,7 @@
 <acme:form readonly="true">
 	<acme:form-textbox code="administrator.configuration.form.label.spamwords" path="spamwords"/>
 	<acme:form-double code="administrator.configuration.form.label.spamthreshold" path="spamThreshold"/>
+	<acme:form-textbox code="administrator.configuration.form.label.language" path="language"/>
 	
   	<acme:form-return code="administrator.configuration.form.button.return"/>
 </acme:form>

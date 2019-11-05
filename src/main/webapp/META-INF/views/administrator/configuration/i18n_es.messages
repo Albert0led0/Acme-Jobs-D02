@@ -11,11 +11,13 @@
 # LIST.JSP
 administrator.configuration.list.label.spamwords = Palabras no deseadas
 administrator.configuration.list.label.spamthreshold = Límite de palabras no deseadas
+administrator.configuration.list.button.return = Volver
 
 
 #FORM.JSP
-administrator.configuration.form.button.return = Return
+administrator.configuration.form.button.return = Volver
 administrator.configuration.form.label.spamwords = Palabras no deseadas:
 administrator.configuration.form.label.spamthreshold = Límite de palabras no deseadas:
+administrator.configuration.form.label.language = Idioma:
 
 

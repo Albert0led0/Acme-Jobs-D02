@@ -19,5 +19,5 @@ public interface AdministratorConfigurationRepository extends AbstractRepository
 	Configuration findConfigurationById(int id);
 
 	@Query("select c from Configuration c where c.language =?1")
-	Configuration findByLanguage(String language);
+	Collection<Configuration> findByLanguage(String language);
 }
