@@ -119,5 +119,14 @@
 		    <property name="reward" value="1534.0" />
 		    <property name="ticker" value="ROSLO-92036" />
 	  </bean>
+	  
+	  <bean id="Request03"	class="acme.entities.requests.Request">
+		    <property name="title" value="Old request 03" />
+		    <property name="moment" value="2019/10/10 00:00" />
+		    <property name="deadline" value="2019/11/01 12:34" />
+		    <property name="description" value="Another example of an old request" />
+		    <property name="reward" value="1500.0" />
+		    <property name="ticker" value="ROSPO-92036" />
+	  </bean>
 
 </beans>

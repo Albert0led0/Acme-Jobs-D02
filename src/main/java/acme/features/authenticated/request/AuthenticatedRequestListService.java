@@ -2,6 +2,7 @@
 package acme.features.authenticated.request;
 
 import java.util.Collection;
+import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -40,8 +41,9 @@ public class AuthenticatedRequestListService implements AbstractListService<Auth
 		assert request != null;
 
 		Collection<Request> result;
+		Date now = new Date(System.currentTimeMillis() - 1);
 
-		result = this.repository.findManyAll();
+		result = this.repository.findManyAllActive(now);
 
 		return result;
 	}
