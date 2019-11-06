@@ -73,11 +73,13 @@ master.menu.user-account.become-consumer = Become a consumer
 
 master.menu.company-record = Company Records
 master.menu.company-record.list = Records list
+master.menu.company-record.list-top = Top company records
 
 # master.menu.investor-record #################################################
 
 master.menu.investor-record = Investor Records
 master.menu.investor-record.list = Records list
+master.menu.investor-record.list-top = Top investor records
 
 # master.menu.challenge #######################################################
 
