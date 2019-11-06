@@ -46,6 +46,8 @@ master.menu.anonymous.crear-paton-bulletin = Create a bulletin for Paton
 
 master.menu.administrator = Administrator
 master.menu.administrator.user-accounts = User accounts
+master.menu.administrator.dashboard	= Dashboard
+master.menu.administrator.configuration = Configuration
 master.menu.administrator.shutdown = Shut down
 
 # master.menu.provider ########################################################
