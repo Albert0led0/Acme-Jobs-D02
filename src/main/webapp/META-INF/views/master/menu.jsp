@@ -53,10 +53,12 @@
 
 		<acme:menu-option code="master.menu.company-record" access="isAnonymous()">
 			<acme:menu-suboption code="master.menu.company-record.list" action="/anonymous/company-record/list"/>
+			<acme:menu-suboption code="master.menu.company-record.list-top" action="/anonymous/company-record/list-top"/>
 		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.investor-record" access="isAnonymous()">
 			<acme:menu-suboption code="master.menu.investor-record.list" action="/anonymous/investor-record/list"/>
+			<acme:menu-suboption code="master.menu.investor-record.list-top" action="/anonymous/investor-record/list-top"/>
 		</acme:menu-option>
 	</acme:menu-left>
 

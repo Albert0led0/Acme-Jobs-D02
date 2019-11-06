@@ -71,11 +71,13 @@ master.menu.user-account.become-consumer = Hazte consumidor
 
 master.menu.company-record = Registros de empresas
 master.menu.company-record.list = Listado de registros
+master.menu.company-record.list-top = Mejores registros de empresas
 
 # master.menu.investor-record #################################################
 
 master.menu.investor-record = Registros de inversores
 master.menu.investor-record.list = Listado de registros
+master.menu.investor-record.list-top = Mejores registros de inversores
 
 # master.menu.challenge #######################################################
 

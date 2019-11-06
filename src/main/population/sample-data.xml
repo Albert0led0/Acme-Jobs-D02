@@ -262,6 +262,18 @@
 		<property name="stars"><null/></property>
 	</bean>
 	
+	<bean id="CompanyRecord06" class="acme.entities.companyRecords.CompanyRecord">
+		<property name="company" value="Acme06" />
+		<property name="sector" value="Construcción" />
+		<property name="ceoName" value="Alberto" />
+		<property name="description" value="Reparaciones de suelos y patios." />
+		<property name="webSite" value="http://example.org/" />
+		<property name="phoneNumber" value="+123 (0123) 1234567890" />
+		<property name="email" value="acme06@info" />
+		<property name="incorporated" value="true" />
+		<property name="stars" value="5" />
+	</bean>
+	
 		<!-- InvestorRecords -->
 	
 	<bean id="InvestorRecord01" class="acme.entities.investorRecords.InvestorRecord">
@@ -289,6 +301,24 @@
 			<ref bean="Money01" />
 		</property>
 		<property name="stars" value="4.7" />
+	</bean>
+	
+	<bean id="InvestorRecord04" class="acme.entities.investorRecords.InvestorRecord">
+		<property name="investorName" value="Julia Rodríguez" />
+		<property name="sector" value="Informática" />
+		<property name="investingStatement">
+			<ref bean="Money01" />
+		</property>
+		<property name="stars" value="5.0" />
+	</bean>
+	
+	<bean id="InvestorRecord05" class="acme.entities.investorRecords.InvestorRecord">
+		<property name="investorName" value="Clara Llanes" />
+		<property name="sector" value="Informática" />
+		<property name="investingStatement">
+			<ref bean="Money01" />
+		</property>
+		<property name="stars" value="5.0" />
 	</bean>
 	
 	<!-- Challenges -->
